@@ -9,6 +9,7 @@
     </asp:ContentPlaceHolder>
     <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
     <style type="text/css">
         #sidebar1 {
             width: 786px;
@@ -29,17 +30,52 @@
 		</div>
 	</div>
 	<div id="menu-wrapper">
-		<div id="menu" class="container">
-			<ul>
+		
+
+            <div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Patient & Visitors</span></a>
+      <ul>
+         <li><a href='#'><span>Product 1</span></a></li>
+         <li><a href='#'><span>Product 2</span></a></li>
+         <li class='last'><a href='#'><span>Product 3</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
+      <ul>
+         <li><a href='#'><span>aaaa</span></a></li>
+         <li class='last'><a href='#'><span>ddddd</span></a></li>
+      </ul>
+   </li>
+    <li class='has-sub'><a href='#'><span>Reports</span></a>
+        <ul>
+         <li><a href='#'><span>Product 1</span></a></li>
+         <li><a href='#'><span>Product 2</span></a></li>
+         <li class='last'><a href='#'><span>Product 3</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Inventory Management</span></a>
+       <ul>
+         <li><a href='#'><span>Product 1</span></a></li>
+         <li><a href='#'><span>Product 2</span></a></li>
+         <li class='last'><a href='#'><span>Product 3</span></a></li>
+      </ul>
+   </li>
+    <li class='has-sub'><a href='#'><span>Contact Us</span></a>
+        <li class='last'><a href='#'><span>Login</span></a>
+</ul>
+</div>
+			<!--<ul>
 				<li class="current_page_item"><a href="#">Homepage</a></li>
 				<li><a href="#">Patient Services</a></li>
 				<li><a href="#">Doctors</a></li>
 				<li><a href="#">Login</a></li>
 				<li><a href="#">Contact</a></li>
-			</ul>
+			</ul> -->
 		</div>
 		<!-- end #menu --> 
-	</div>
+	
 	<div id="banner"></div>
 	<div id="page" class="container">
 		<div id="content">
