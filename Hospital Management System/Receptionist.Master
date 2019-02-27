@@ -57,7 +57,7 @@
          <li class='last'><a href='#'><span>Search Appointment</span></a></li>
       </ul>
    </li>
-        <li class='last'><a href='#'><span>Login</span></a> </li>
+        <li class='last'><a href='#'><span>Logout</span></a> </li>
 </ul>
 </div>
 			<!--<ul>
