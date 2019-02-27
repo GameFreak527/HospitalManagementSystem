@@ -35,45 +35,32 @@
             <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'><span>Home</span></a></li>
-   <li class='has-sub'><a href='#'><span>Patients & Visitors</span></a>
-      <ul>
-         <li><a href='#'><span>Register Patient</span></a></li>
-         <li><a href='#'><span>View Patient Information</span></a></li>
-           <li><a href='#'><span>Update Patient Information</span></a></li>
-          <li class='last'><a href='#'><span>Search Patient</span></a></li>
-      </ul>
-   </li>
-   <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
-      <ul>
-         <li><a href='#'><span>View Staff Information</span></a></li>
-          <li><a href='#'><span>Search Staff Information</span></a></li>
-         <li class='last'><a href='#'><span>Update Staff Information</span></a></li>
-      </ul>
-   </li>
-    <li class='has-sub'><a href='#'><span>Appointments</span></a>
-      <ul>
-         <li><a href='#'><span>Book Appointment</span></a></li>
-           <li><a href='#'><span>Cancel Appointment</span></a></li>
-         <li class='last'><a href='#'><span>Search Appointment</span></a></li>
-      </ul>
-   </li>
+   
+   
+    
     <li class='has-sub'><a href='#'><span>Reports</span></a>
         <ul>
-         <li><a href='#'><span>Request Report</span></a></li>
-         <li><a href='#'><span>Add new Record</span></a></li>
-         <li class='last'><a href='#'><span>Update Record</span></a></li>
+         <li><a href='#'><span>View Report</span></a></li>
+         
       </ul>
    </li>
+     <li class='has-sub'><a href='#'><span>Inventory Order</span></a>
+          <ul>
+         <li><a href='#'><span>Place Order</span></a></li>
+          <li><a href='#'><span>View Orders</span></a></li>
+      </ul>
+
+     </li>
    <li class='has-sub'><a href='#'><span>Inventory Management</span></a>
        <ul>
          <li><a href='#'><span>Add Item</span></a></li>
          <li><a href='#'><span>Delete Item</span></a></li>
            <li><a href='#'><span>Search Item</span></a></li>
            <li><a href='#'><span>Update Item</span></a></li>
-         <li class='last'><a href='#'><span>Place an Order</span></a></li>
+        
       </ul>
    </li>
-    <li class='has-sub'><a href='#'><span>Contact Us</span></a> </li>
+    
         <li class='last'><a href='#'><span>Login</span></a> </li>
 </ul>
 </div>

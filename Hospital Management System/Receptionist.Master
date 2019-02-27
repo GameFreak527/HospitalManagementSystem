@@ -57,23 +57,6 @@
          <li class='last'><a href='#'><span>Search Appointment</span></a></li>
       </ul>
    </li>
-    <li class='has-sub'><a href='#'><span>Reports</span></a>
-        <ul>
-         <li><a href='#'><span>Request Report</span></a></li>
-         <li><a href='#'><span>Add new Record</span></a></li>
-         <li class='last'><a href='#'><span>Update Record</span></a></li>
-      </ul>
-   </li>
-   <li class='has-sub'><a href='#'><span>Inventory Management</span></a>
-       <ul>
-         <li><a href='#'><span>Add Item</span></a></li>
-         <li><a href='#'><span>Delete Item</span></a></li>
-           <li><a href='#'><span>Search Item</span></a></li>
-           <li><a href='#'><span>Update Item</span></a></li>
-         <li class='last'><a href='#'><span>Place an Order</span></a></li>
-      </ul>
-   </li>
-    <li class='has-sub'><a href='#'><span>Contact Us</span></a> </li>
         <li class='last'><a href='#'><span>Login</span></a> </li>
 </ul>
 </div>

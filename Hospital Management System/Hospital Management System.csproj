@@ -67,7 +67,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Doctor.Master" />
+    <Content Include="LaboratoryTest.aspx" />
+    <Content Include="Nurse.Master" />
+    <Content Include="Laboratory.Master" />
     <None Include="packages.config" />
+    <Content Include="DoctorTest.aspx" />
     <Content Include="images\bg01.png" />
     <Content Include="images\highlight.png" />
     <Content Include="images\hover.png" />
@@ -77,8 +82,15 @@
     <Content Include="images\pic03.jpg" />
     <Content Include="images\pic04.jpg" />
     <Content Include="images\pic05.jpg" />
+    <Content Include="NurseTest.aspx" />
+    <Content Include="PatientTest.aspx" />
+    <Content Include="PharmacistTest.aspx" />
+    <Content Include="ReceptionistTest.aspx" />
     <Content Include="styles.css" />
     <Content Include="Site1.Master" />
+    <Content Include="Patient.Master" />
+    <Content Include="Pharmacist.Master" />
+    <Content Include="Receptionist.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,7 +105,91 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctor.Master.cs">
+      <DependentUpon>Doctor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doctor.Master.designer.cs">
+      <DependentUpon>Doctor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorTest.aspx.cs">
+      <DependentUpon>DoctorTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorTest.aspx.designer.cs">
+      <DependentUpon>DoctorTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratory.Master.cs">
+      <DependentUpon>Laboratory.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laboratory.Master.designer.cs">
+      <DependentUpon>Laboratory.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryTest.aspx.cs">
+      <DependentUpon>LaboratoryTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaboratoryTest.aspx.designer.cs">
+      <DependentUpon>LaboratoryTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse.Master.cs">
+      <DependentUpon>Nurse.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nurse.Master.designer.cs">
+      <DependentUpon>Nurse.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NurseTest.aspx.cs">
+      <DependentUpon>NurseTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NurseTest.aspx.designer.cs">
+      <DependentUpon>NurseTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.Master.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Patient.Master.designer.cs">
+      <DependentUpon>Patient.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PatientTest.aspx.cs">
+      <DependentUpon>PatientTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientTest.aspx.designer.cs">
+      <DependentUpon>PatientTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist.Master.cs">
+      <DependentUpon>Pharmacist.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pharmacist.Master.designer.cs">
+      <DependentUpon>Pharmacist.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistTest.aspx.cs">
+      <DependentUpon>PharmacistTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PharmacistTest.aspx.designer.cs">
+      <DependentUpon>PharmacistTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receptionist.Master.cs">
+      <DependentUpon>Receptionist.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receptionist.Master.designer.cs">
+      <DependentUpon>Receptionist.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistTest.aspx.cs">
+      <DependentUpon>ReceptionistTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReceptionistTest.aspx.designer.cs">
+      <DependentUpon>ReceptionistTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
