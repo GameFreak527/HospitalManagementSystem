@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2cc32c8beee64c1fbb806fac0e6e9e77" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="HospitalDBModel.Appointment" Width="1.5" PointX="10.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Employee" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.EmployeeType" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Hospital" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Inventory" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.MedicalItem" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.MedicalItem1" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Patient" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalDBModel.Ward" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="HospitalDBModel.FK__Appointme__Emplo__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Appointme__Patie__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Employee__Employ__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Employee__Ward__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Inventory__Hospi__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Ward__Hospital__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__MedicalIt__Inven__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__MedicalIt__Medic__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalDBModel.FK__Patient__Ward__1DE57479" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
