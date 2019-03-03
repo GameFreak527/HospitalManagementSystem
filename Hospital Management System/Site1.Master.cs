@@ -11,7 +11,20 @@ namespace Hospital_Management_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Employee employee = (Employee)Session["employee"];
+            if (employee != null)
+            {
+                userName.InnerText = ((Employee)Session["employee"]).FirstName;
+                Login.InnerText = "Logout";
+            }
+            else
+            {
+                userNameBlock.Visible = false;
+            }
 
-        }
+         }
+
+        
+
     }
 }

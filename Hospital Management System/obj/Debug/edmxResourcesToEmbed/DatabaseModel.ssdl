@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="AppointmentID" />
+    </Key>
+    <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Patient" Type="int" />
+    <Property Name="Diagnosis" Type="varchar" MaxLength="255" />
+    <Property Name="StartTime" Type="varchar" MaxLength="255" />
+    <Property Name="EndTime" Type="varchar" MaxLength="255" />
+    <Property Name="Employee" Type="int" />
+    <Property Name="Prescription" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ward" Type="int" />
+    <Property Name="EmployeeType" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="Password" Type="varchar" MaxLength="255" />
+    <Property Name="SIN" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="EmployeeType">
+    <Key>
+      <PropertyRef Name="EmployeeTypeID" />
+    </Key>
+    <Property Name="EmployeeTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Hospital">
+    <Key>
+      <PropertyRef Name="HospitalID" />
+    </Key>
+    <Property Name="HospitalID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+    <Property Name="City" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryID" />
+    </Key>
+    <Property Name="InventoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hospital" Type="int" />
+  </EntityType>
+  <EntityType Name="MedicalItem">
+    <Key>
+      <PropertyRef Name="MedicalItemID" />
+    </Key>
+    <Property Name="MedicalItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicalItemsType" Type="int" />
+    <Property Name="PurchaseDate" Type="varchar" MaxLength="255" />
+    <Property Name="ExpirationDate" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MedicalItems">
+    <Key>
+      <PropertyRef Name="MedicalItemsID" />
+    </Key>
+    <Property Name="MedicalItemsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inventory" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="Supplier" Type="varchar" MaxLength="255" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="PatientID" />
+    </Key>
+    <Property Name="PatientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ward" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Ward">
+    <Key>
+      <PropertyRef Name="WardID" />
+    </Key>
+    <Property Name="WardID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="Hospital" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK__Appointme__Emplo__276EDEB3">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Patie__267ABA7A">
+    <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="Patient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employee__Employ__239E4DCF">
+    <End Role="EmployeeType" Type="Self.EmployeeType" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeType">
+        <PropertyRef Name="EmployeeTypeID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employee__Ward__22AA2996">
+    <End Role="Ward" Type="Self.Ward" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ward">
+        <PropertyRef Name="WardID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Ward" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Inventory__Hospi__15502E78">
+    <End Role="Hospital" Type="Self.Hospital" Multiplicity="0..1" />
+    <End Role="Inventory" Type="Self.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hospital">
+        <PropertyRef Name="HospitalID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="Hospital" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicalIt__Inven__182C9B23">
+    <End Role="Inventory" Type="Self.Inventory" Multiplicity="0..1" />
+    <End Role="MedicalItems" Type="Self.MedicalItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="InventoryID" />
+      </Principal>
+      <Dependent Role="MedicalItems">
+        <PropertyRef Name="Inventory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicalIt__Medic__1B0907CE">
+    <End Role="MedicalItems" Type="Self.MedicalItems" Multiplicity="0..1" />
+    <End Role="MedicalItem" Type="Self.MedicalItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedicalItems">
+        <PropertyRef Name="MedicalItemsID" />
+      </Principal>
+      <Dependent Role="MedicalItem">
+        <PropertyRef Name="MedicalItemsType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Patient__Ward__1DE57479">
+    <End Role="Ward" Type="Self.Ward" Multiplicity="0..1" />
+    <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ward">
+        <PropertyRef Name="WardID" />
+      </Principal>
+      <Dependent Role="Patient">
+        <PropertyRef Name="Ward" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ward__Hospital__1273C1CD">
+    <End Role="Hospital" Type="Self.Hospital" Multiplicity="0..1" />
+    <End Role="Ward" Type="Self.Ward" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hospital">
+        <PropertyRef Name="HospitalID" />
+      </Principal>
+      <Dependent Role="Ward">
+        <PropertyRef Name="Hospital" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HospitalDBModelStoreContainer">
+    <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeType" EntityType="Self.EmployeeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hospital" EntityType="Self.Hospital" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicalItem" EntityType="Self.MedicalItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicalItems" EntityType="Self.MedicalItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ward" EntityType="Self.Ward" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Appointme__Emplo__276EDEB3" Association="Self.FK__Appointme__Emplo__276EDEB3">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Patie__267ABA7A" Association="Self.FK__Appointme__Patie__267ABA7A">
+      <End Role="Patient" EntitySet="Patient" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employee__Employ__239E4DCF" Association="Self.FK__Employee__Employ__239E4DCF">
+      <End Role="EmployeeType" EntitySet="EmployeeType" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employee__Ward__22AA2996" Association="Self.FK__Employee__Ward__22AA2996">
+      <End Role="Ward" EntitySet="Ward" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Inventory__Hospi__15502E78" Association="Self.FK__Inventory__Hospi__15502E78">
+      <End Role="Hospital" EntitySet="Hospital" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicalIt__Inven__182C9B23" Association="Self.FK__MedicalIt__Inven__182C9B23">
+      <End Role="Inventory" EntitySet="Inventory" />
+      <End Role="MedicalItems" EntitySet="MedicalItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicalIt__Medic__1B0907CE" Association="Self.FK__MedicalIt__Medic__1B0907CE">
+      <End Role="MedicalItems" EntitySet="MedicalItems" />
+      <End Role="MedicalItem" EntitySet="MedicalItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Patient__Ward__1DE57479" Association="Self.FK__Patient__Ward__1DE57479">
+      <End Role="Ward" EntitySet="Ward" />
+      <End Role="Patient" EntitySet="Patient" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ward__Hospital__1273C1CD" Association="Self.FK__Ward__Hospital__1273C1CD">
+      <End Role="Hospital" EntitySet="Hospital" />
+      <End Role="Ward" EntitySet="Ward" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

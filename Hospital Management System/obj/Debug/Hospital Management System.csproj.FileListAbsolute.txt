@@ -6,3 +6,16 @@ C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Manag
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache

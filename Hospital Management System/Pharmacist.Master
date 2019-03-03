@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Hospital_Management_System.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pharmacist.master.cs" Inherits="Hospital_Management_System.Pharmacist" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,13 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <!-- BootStrap and Jquery-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+
+
     <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
@@ -61,7 +68,8 @@
       </ul>
    </li>
     
-        <li class='last'><a href='#'><span>Logout</span></a> </li>
+        <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
+                        <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a> </li>
 </ul>
 </div>
 			<!--<ul>
