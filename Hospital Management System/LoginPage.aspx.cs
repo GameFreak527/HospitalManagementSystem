@@ -21,7 +21,9 @@ namespace Hospital_Management_System
             Employee employee = context.Employees.FirstOrDefault(x => (x.EmployeeID == id && x.Password == password));
             if (employee == null)
             {
-                //Show the message that the Invalid Id or Password
+                errorMessageDiv.Visible = true;
+                errorMessage.Text = "UserId or Password is Inncorrect !!";
+                errorMessage.Font.Bold = true;
             }
             else
             {

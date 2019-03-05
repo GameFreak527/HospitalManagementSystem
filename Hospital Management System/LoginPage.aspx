@@ -1,9 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="Hospital_Management_System.Test" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="Hospital_Management_System.Test" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="loginDiv" style="margin-left:30%">
-       <h2><span class="badge badge-secondary">Login</span></h2>
+    <div id="outerDiv" style="margin-left:30%; overflow-wrap:inherit; width: 454px;" class="shadow-lg p-3 mb-2 bg-info text-white rounded">
+        <div class="alert alert-danger" role="alert" runat="server" id="errorMessageDiv" visible="false">
+            <asp:Label ID="errorMessage" runat="server" Text="ERROR" Enabled="false"></asp:Label>
+        </div>
+        <div id="contentDiv" class="p-3 mb-2 bg-danger text-white">
+       <h2><span class="badge badge-secondary" style="margin-left:20%; margin-bottom:2%">Login</span></h2>
        <table>
            <tr>
                <th><asp:Label ID="id" runat="server" Text="Id"></asp:Label></th>
@@ -22,5 +26,6 @@
                <th><asp:Button ID="submit" runat="server" Text="Submit" class="btn btn-outline-success" OnClick="submit_Click"/></th>
            </tr>
        </table>
+            </div>
    </div>
 </asp:Content>
