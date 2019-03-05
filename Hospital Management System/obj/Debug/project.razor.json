@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\kiran\\OneDrive\\Documents\\GitHub\\HospitalManagementSystem\\Hospital Management System\\Hospital Management System.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
