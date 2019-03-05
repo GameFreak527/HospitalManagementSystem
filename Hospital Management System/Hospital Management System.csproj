@@ -97,6 +97,8 @@
     <Content Include="LaboratoryTest.aspx" />
     <Content Include="Nurse.Master" />
     <Content Include="Laboratory.Master" />
+    <Content Include="registerEmployee.aspx" />
+    <Content Include="patientRegister.aspx" />
     <EntityDeploy Include="DatabaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DatabaseModel.Designer.cs</LastGenOutput>
@@ -182,7 +184,9 @@
     <Content Include="default.css" />
     <Content Include="fonts.css" />
     <Content Include="LoginPage.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appointment.cs">
@@ -333,6 +337,20 @@
     </Compile>
     <Compile Include="Ward.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="registerEmployee.aspx.cs">
+      <DependentUpon>registerEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registerEmployee.aspx.designer.cs">
+      <DependentUpon>registerEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="patientRegister.aspx.cs">
+      <DependentUpon>patientRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patientRegister.aspx.designer.cs">
+      <DependentUpon>patientRegister.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

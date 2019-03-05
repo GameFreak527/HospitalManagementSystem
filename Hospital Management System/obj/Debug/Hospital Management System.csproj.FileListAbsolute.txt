@@ -19,3 +19,17 @@ D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospi
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojAssemblyReference.cache
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
