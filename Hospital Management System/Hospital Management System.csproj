@@ -95,6 +95,7 @@
       <LastGenOutput>DatabaseModel.cs</LastGenOutput>
     </Content>
     <Content Include="Doctor.Master" />
+    <Content Include="EmployeeDetails.aspx" />
     <Content Include="LaboratoryTest.aspx" />
     <Content Include="Nurse.Master" />
     <Content Include="Laboratory.Master" />
@@ -128,6 +129,7 @@
     <Content Include="PatientTest.aspx" />
     <Content Include="PharmacistTest.aspx" />
     <Content Include="ReceptionistTest.aspx" />
+    <Content Include="RegisterPatient.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -239,6 +241,13 @@
     <Compile Include="Employee.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeDetails.aspx.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.aspx.designer.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeType.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
@@ -328,6 +337,13 @@
     </Compile>
     <Compile Include="ReceptionistTest.aspx.designer.cs">
       <DependentUpon>ReceptionistTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient.aspx.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPatient.aspx.designer.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

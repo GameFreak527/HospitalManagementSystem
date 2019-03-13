@@ -94,32 +94,10 @@
 			
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-           <div></div>
+          
         
         </asp:ContentPlaceHolder>
     </div>
-
-			
-
-
-
-		<!--<div id="sidebar">
-			<div class="box2">
-				<div class="title">
-					<h2>Patient Services </h2>
-				</div>
-				<ul class="style2">
-					<li><a href="#">Register Patient</a></li>
-					<li><a href="#">Make Appointment</a></li>
-					<li><a href="#">View Patient Information</a></li>
-					<li><a href="#">Update Patient Information</a></li>
-					<li><a href="#">Search Patient</a></li>
-					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-					<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				</ul>
-			</div>
-		</div>
-            -->
 	</div>
 </div>
 	<%--<div id="portfolio-wrapper">
