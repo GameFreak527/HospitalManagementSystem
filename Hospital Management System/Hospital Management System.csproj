@@ -77,6 +77,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BookAppointmentPage.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -191,6 +192,14 @@
     <Compile Include="Appointment.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookAppointmentPage.aspx.cs">
+      <DependentUpon>BookAppointmentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookAppointmentPage.aspx.designer.cs">
+      <DependentUpon>BookAppointmentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionClass.cs" />
     <Compile Include="DatabaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
