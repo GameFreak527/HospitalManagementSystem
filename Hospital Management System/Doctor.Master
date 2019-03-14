@@ -44,16 +44,13 @@
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
-        
-         <li><a href='#'><span>View Patient Information</span></a></li>
-          
-          <li class='last'><a href='#'><span>Search Patient</span></a></li>
+         <li><a href='#'><span>View Patients</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
       <ul>
          
-          <li><a href='#'><span>View Staff Location</span></a></li>
+          <li><a href='EmployeeDetails.aspx'><span>View Staff</span></a></li>
          
       </ul>
    </li>
