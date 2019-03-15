@@ -44,16 +44,13 @@
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
-        
-         <li><a href='#'><span>View Patient Information</span></a></li>
-          
-          <li class='last'><a href='#'><span>Search Patient</span></a></li>
+         <li><a href='#'><span>View Patients</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
       <ul>
          
-          <li><a href='#'><span>View Staff Location</span></a></li>
+          <li><a href='EmployeeDetails.aspx'><span>View Staff</span></a></li>
          
       </ul>
    </li>
@@ -94,32 +91,10 @@
 			
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-           <div></div>
+          
         
         </asp:ContentPlaceHolder>
     </div>
-
-			
-
-
-
-		<!--<div id="sidebar">
-			<div class="box2">
-				<div class="title">
-					<h2>Patient Services </h2>
-				</div>
-				<ul class="style2">
-					<li><a href="#">Register Patient</a></li>
-					<li><a href="#">Make Appointment</a></li>
-					<li><a href="#">View Patient Information</a></li>
-					<li><a href="#">Update Patient Information</a></li>
-					<li><a href="#">Search Patient</a></li>
-					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-					<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				</ul>
-			</div>
-		</div>
-            -->
 	</div>
 </div>
 	<%--<div id="portfolio-wrapper">
