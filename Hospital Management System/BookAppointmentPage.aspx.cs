@@ -71,7 +71,8 @@ namespace Hospital_Management_System
                 int.TryParse(EmployeeTextBox.Text, out p) &&
                  Begin_Calendar.SelectedDate != DateTime.MinValue
                   && End_Calendar.SelectedDate != DateTime.MinValue &&
-                   Begin_Calendar.SelectedDate < End_Calendar.SelectedDate)
+                  Begin_Calendar.SelectedDate < End_Calendar.SelectedDate
+                 )
             {
                 i = Convert.ToInt32(EmployeeTextBox.Text);
 
@@ -102,10 +103,9 @@ namespace Hospital_Management_System
 
 
                 //Value will be tue if appointment is valid
-                bool isAppointmentValid = CheckIfAppointmentIsValid(listOfAppointments, startCalendarValue,
-                    endCalendarValue);
+              
 
-                if (appoint.Count() != 0 && isAppointmentValid == true && patient != null)
+                if (appoint.Count() != 0 &&  patient != null)
                 {
 
                     //Dispose of db Context
@@ -163,29 +163,6 @@ namespace Hospital_Management_System
             }
         }
 
-        //Checks if the specified employee has any appointments witin that timeframe already booked
-        private bool CheckIfAppointmentIsValid(List<Appointment> listOfAppointments, DateTime start, DateTime end)
-        {
-
-            foreach (Appointment a in listOfAppointments)
-            {
-
-                DateTime AppointmentStartTime = Convert.ToDateTime(a.StartTime);
-                DateTime AppointmentEndTime = Convert.ToDateTime(a.EndTime);
-
-
-
-                if (AppointmentEndTime <= end && AppointmentStartTime >= start)
-                {
-                    //Label3.Text = start.ToLongDateString();
-                    //Returns false if the appointment being created conflicts
-                    return false;
-                }
-
-            }
-
-
-            return true;
-        }
+       
     }
 }
