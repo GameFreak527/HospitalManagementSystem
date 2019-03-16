@@ -32,7 +32,7 @@
 		<div id="header" class="container">
 			<div id="logo">
 				<h1><a href="#">HMS</a></h1>
-				
+				<p>Health Science Centre</p>
 			</div>
 		</div>
 	</div>
@@ -44,16 +44,13 @@
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
-        
-         <li><a href='#'><span>View Patient Information</span></a></li>
-          
-          <li class='last'><a href='SearchPatientInfoDoc.aspx'><span>Search Patient</span></a></li>
+         <li><a href='#'><span>View Patients</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
       <ul>
          
-          <li><a href='#'><span>View Staff Location</span></a></li>
+          <li><a href='EmployeeDetails.aspx'><span>View Staff</span></a></li>
          
       </ul>
    </li>
@@ -94,32 +91,10 @@
 			
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-           <div></div>
+          
         
         </asp:ContentPlaceHolder>
     </div>
-
-			
-
-
-
-		<!--<div id="sidebar">
-			<div class="box2">
-				<div class="title">
-					<h2>Patient Services </h2>
-				</div>
-				<ul class="style2">
-					<li><a href="#">Register Patient</a></li>
-					<li><a href="#">Make Appointment</a></li>
-					<li><a href="#">View Patient Information</a></li>
-					<li><a href="#">Update Patient Information</a></li>
-					<li><a href="#">Search Patient</a></li>
-					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-					<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				</ul>
-			</div>
-		</div>
-            -->
 	</div>
 </div>
 	<%--<div id="portfolio-wrapper">
@@ -155,6 +130,45 @@
 		</div>
 	</div>--%>
 
+<div id="footer-wrapper">
+	<div id="footer" class="container">
+		<div id="box1">
+			<div class="title">
+				<h2>Popular Links</h2>
+			</div>
+			<ul class="style1">
+				<li><a href="#">Care Programs</a></li>
+				<li><a href="#">Careers</a></li>
+                <li><a href="#">Volunteers</a></li>
+				
+			</ul>
+		</div>
+		<div id="box2">
+			<div class="title">
+				
+			</div>
+			<ul class="style1">
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Safety Reporting</a></li>
+				
+			</ul>
+		</div>
+		<div id="box3">
+			<div class="title">
+				<h2>Follow Us</h2>
+			</div>
+			
+			<ul class="contact">
+				<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+				<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+				<li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+				<li><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
+				<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+			</ul>
+				 </div>
+		</div>
+	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; Copyright 2019. All rights reserved.  | Design by Team S-1</p>
@@ -162,7 +176,6 @@
         
         
         
-       
          
    
     </form>

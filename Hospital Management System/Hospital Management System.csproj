@@ -77,6 +77,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BookAppointmentPage.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -94,11 +95,10 @@
       <LastGenOutput>DatabaseModel.cs</LastGenOutput>
     </Content>
     <Content Include="Doctor.Master" />
+    <Content Include="EmployeeDetails.aspx" />
     <Content Include="LaboratoryTest.aspx" />
     <Content Include="Nurse.Master" />
     <Content Include="Laboratory.Master" />
-    <Content Include="PatientDetailsDoc.aspx" />
-    <Content Include="PatientDetailsNurse.aspx" />
     <Content Include="registerEmployee.aspx" />
     <EntityDeploy Include="DatabaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -114,7 +114,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="demo.Master" />
-    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="DoctorTest.aspx" />
     <Content Include="images\bg01.png" />
@@ -130,6 +129,7 @@
     <Content Include="PatientTest.aspx" />
     <Content Include="PharmacistTest.aspx" />
     <Content Include="ReceptionistTest.aspx" />
+    <Content Include="RegisterPatient.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -159,8 +159,6 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="SearchPatientInfoDoc.aspx" />
-    <Content Include="SearchPatientInfoNurse.aspx" />
     <Content Include="styles.css" />
     <Content Include="Site1.Master" />
     <Content Include="Patient.Master" />
@@ -188,22 +186,22 @@
     <Content Include="default.css" />
     <Content Include="fonts.css" />
     <Content Include="LoginPage.aspx" />
-    <Content Include="ViewPatientInfo.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
     <Compile Include="Appointment.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookAppointmentPage.aspx.cs">
+      <DependentUpon>BookAppointmentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookAppointmentPage.aspx.designer.cs">
+      <DependentUpon>BookAppointmentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionClass.cs" />
     <Compile Include="DatabaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -242,6 +240,13 @@
     </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.aspx.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.aspx.designer.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmployeeType.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
@@ -297,20 +302,6 @@
     <Compile Include="Patient.Master.designer.cs">
       <DependentUpon>Patient.Master</DependentUpon>
     </Compile>
-    <Compile Include="PatientDetailsDoc.aspx.cs">
-      <DependentUpon>PatientDetailsDoc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PatientDetailsDoc.aspx.designer.cs">
-      <DependentUpon>PatientDetailsDoc.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PatientDetailsNurse.aspx.cs">
-      <DependentUpon>PatientDetailsNurse.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PatientDetailsNurse.aspx.designer.cs">
-      <DependentUpon>PatientDetailsNurse.aspx</DependentUpon>
-    </Compile>
     <Compile Include="PatientTest.aspx.cs">
       <DependentUpon>PatientTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -347,19 +338,12 @@
     <Compile Include="ReceptionistTest.aspx.designer.cs">
       <DependentUpon>ReceptionistTest.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SearchPatientInfoDoc.aspx.cs">
-      <DependentUpon>SearchPatientInfoDoc.aspx</DependentUpon>
+    <Compile Include="RegisterPatient.aspx.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SearchPatientInfoDoc.aspx.designer.cs">
-      <DependentUpon>SearchPatientInfoDoc.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SearchPatientInfoNurse.aspx.cs">
-      <DependentUpon>SearchPatientInfoNurse.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SearchPatientInfoNurse.aspx.designer.cs">
-      <DependentUpon>SearchPatientInfoNurse.aspx</DependentUpon>
+    <Compile Include="RegisterPatient.aspx.designer.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -374,13 +358,6 @@
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ViewPatientInfo.aspx.cs">
-      <DependentUpon>ViewPatientInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewPatientInfo.aspx.designer.cs">
-      <DependentUpon>ViewPatientInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ward.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
