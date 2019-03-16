@@ -10,6 +10,15 @@
 namespace Hospital_Management_System {
     
     
-    public partial class DoctorTest {
+    public partial class PatientDetailsNurse {
+        
+        /// <summary>
+        /// patientDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DetailsView patientDetails;
     }
 }

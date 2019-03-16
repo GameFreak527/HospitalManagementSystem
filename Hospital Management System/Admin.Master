@@ -38,16 +38,16 @@
 	</div>
 	<div id="menu-wrapper">
 		
-
+        
             <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
         
-         <li><a href='#'><span>View Patient Information</span></a></li>
+         <li><a href='ViewPatientInfo.aspx'><span>View Patient Information</span></a></li>
           
-          <li class='last'><a href='SearchPatientInfoDoc.aspx'><span>Search Patient</span></a></li>
+          <li class='last'><a href='#'><span>Search Patient</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
@@ -162,7 +162,6 @@
         
         
         
-       
          
    
     </form>

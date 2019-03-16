@@ -33,3 +33,7 @@ C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Manag
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml

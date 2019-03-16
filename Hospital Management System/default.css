@@ -24,7 +24,7 @@ p, ol, ul {
 
 p {
 	line-height: 190%;
-    width: 632px;
+    width: 631px;
 }
 
 strong {
@@ -189,7 +189,8 @@ hr {
 		font-weight: 400;
 		font-size: 2em;
 		color: #B10058;
-	}
+    text-align: center;
+}
 	
 	.title .byline
 	{
@@ -589,7 +590,12 @@ hr {
 
 
 
-
+    #body{
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
 
 
 
