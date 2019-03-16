@@ -71,7 +71,7 @@ namespace Hospital_Management_System
                 int.TryParse(EmployeeTextBox.Text, out p) &&
                  Begin_Calendar.SelectedDate != DateTime.MinValue
                   && End_Calendar.SelectedDate != DateTime.MinValue &&
-                  Begin_Calendar.SelectedDate < End_Calendar.SelectedDate
+                  Begin_Calendar.SelectedDate <= End_Calendar.SelectedDate
                  )
             {
                 i = Convert.ToInt32(EmployeeTextBox.Text);
