@@ -19,8 +19,8 @@ namespace Hospital_Management_System
             //Comment mine out and add yours to use this classes methods
 
             //Gab's
-            //cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
-            cn = new SqlConnection(@"Data Source=GameFreak;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
+            cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
+            //cn = new SqlConnection(@"Data Source=GameFreak;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
         }
 
 
