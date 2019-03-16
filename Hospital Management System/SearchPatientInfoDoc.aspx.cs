@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -7,41 +9,19 @@ using System.Web.UI.WebControls;
 
 namespace Hospital_Management_System
 {
-    public partial class Test : System.Web.UI.Page
+    public partial class SearchPatientInfoDoc : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            BindGrid();
         }
-
-        protected void submit_Click(object sender, EventArgs e)
-        {
-            int id = int.Parse(idTxtBox.Text.ToString());
-            String password = passwordTxtBox.Text.ToString();
-            var context = new HospitalDBEntities();
-            Employee employee = context.Employees.FirstOrDefault(x => (x.EmployeeID == id && x.Password == password));
-            if (employee == null)
-            {
-                errorMessageDiv.Visible = true;
-                errorMessage.Text = "UserId or Password is Inncorrect !!";
-                errorMessage.Font.Bold = true;
-            }
-            else
-            {
-                Session["employee"] = employee;
-                Response.Redirect("DoctorTest.aspx");
-
-            }
-        }
-
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
             //Checks which user is entering the system and chooses the master pages for them
             //checks if the session is null or not
-            if (Session["employee"] != null)
-                
+            if (Session.Count > 0)
             {
-                
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
             }
             if (position == 5)
@@ -68,6 +48,36 @@ namespace Hospital_Management_System
             {
                 MasterPageFile = "~/Site1.Master";
             }
+        }
+        private void BindGrid()
+        {
+            SqlConnection conn;
+            SqlCommand comm;
+            SqlDataReader reader;
+            string connstr = ConfigurationManager.ConnectionStrings["Hospital_ManagementDBConnectionString"].ConnectionString;
+            conn = new SqlConnection(connstr);
+            comm = new SqlCommand("select PatientID,FirstName from Patient", conn);
+            try
+            {
+                conn.Open();
+                reader = comm.ExecuteReader();
+                searchPatient.DataSource = reader;
+                searchPatient.DataKeyNames = new string[] { "PatientID" };
+                searchPatient.DataBind();
+                reader.Close();
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        protected void searchPatient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("PatientDetailsDoc.aspx?PatientID=" + searchPatient.SelectedDataKey.Value.ToString());
+
         }
     }
 }

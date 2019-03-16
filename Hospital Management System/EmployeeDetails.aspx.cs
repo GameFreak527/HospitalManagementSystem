@@ -7,30 +7,33 @@ using System.Web.UI.WebControls;
 
 namespace Hospital_Management_System
 {
-    public partial class Test : System.Web.UI.Page
+    public partial class EmployeeDetails : System.Web.UI.Page
     {
+
+        List<Employee> employeeList;
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Hide Employee location div 
+            employee.Visible = false;
+            var context = new HospitalDBEntities();
+
+            employeeList = context.Employees.ToList();
+
+            EmpDetails.DataSource = employeeList.ToList();
+            EmpDetails.DataBind();
         }
 
-        protected void submit_Click(object sender, EventArgs e)
+        protected void linkSelect_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(idTxtBox.Text.ToString());
-            String password = passwordTxtBox.Text.ToString();
-            var context = new HospitalDBEntities();
-            Employee employee = context.Employees.FirstOrDefault(x => (x.EmployeeID == id && x.Password == password));
-            if (employee == null)
-            {
-                errorMessageDiv.Visible = true;
-                errorMessage.Text = "UserId or Password is Inncorrect !!";
-                errorMessage.Font.Bold = true;
-            }
-            else
-            {
-                Session["employee"] = employee;
-                Response.Redirect("DoctorTest.aspx");
+            employee.Visible = true;
+            int id = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            employeeGrid.DataSource = employeeList.Where(x => x.EmployeeID == id).Select(x => x.Ward1).ToList();
+            employeeGrid.DataBind();
 
-            }
+
+
+
+
         }
 
         protected override void OnPreInit(EventArgs e)
@@ -38,10 +41,8 @@ namespace Hospital_Management_System
             int position = 0;
             //Checks which user is entering the system and chooses the master pages for them
             //checks if the session is null or not
-            if (Session["employee"] != null)
-                
+            if (Session.Count > 0)
             {
-                
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
             }
             if (position == 5)

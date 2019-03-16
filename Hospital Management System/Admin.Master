@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nurse.master.cs" Inherits="Hospital_Management_System.Nurse" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Doctor.master.cs" Inherits="Hospital_Management_System.Doctor" %>
 
 <!DOCTYPE html>
 
@@ -38,16 +38,16 @@
 	</div>
 	<div id="menu-wrapper">
 		
-
+        
             <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
         
-         <li><a href='#'><span>View Patient Information</span></a></li>
+         <li><a href='ViewPatientInfo.aspx'><span>View Patient Information</span></a></li>
           
-          <li class='last'><a href='#'><span>Search Patient Location</span></a></li>
+          <li class='last'><a href='#'><span>Search Patient</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
@@ -57,14 +57,22 @@
          
       </ul>
    </li>
-    
-    <li class='has-sub'><a href='#'><span>Reports</span></a>
-        <ul>
-         <li><a href='#'><span>View Report</span></a></li>
-         
+    <li class='has-sub'><a href='#'><span>Appointments</span></a>
+      <ul>
+         <li><a href='#'><span>View Appointments</span></a></li>
+           
+         <li class='last'><a href='#'><span>Search Appointment</span></a></li>
       </ul>
    </li>
-   <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
+    <li class='has-sub'><a href='#'><span>Reports</span></a>
+        <ul>
+         <li><a href='#'><span>Request New Report</span></a></li>
+         <li><a href='#'><span>Add Report</span></a></li>
+         <li class='last'><a href='#'><span>Update Report</span></a></li>
+      </ul>
+   </li>
+  
+    <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
                         <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a> </li>
 </ul>
 </div>
