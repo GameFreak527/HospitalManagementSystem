@@ -28,7 +28,7 @@ namespace Hospital_Management_System
             else
             {
                 Session["employee"] = employee;
-                Response.Redirect("LoginPage.aspx");
+                Response.Redirect("BookAppointmentPage.aspx");
 
             }
         }
