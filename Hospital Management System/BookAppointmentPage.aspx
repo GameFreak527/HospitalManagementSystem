@@ -22,13 +22,6 @@
             <asp:TextBox ID="BeginTime" TextMode="Time" runat="server" Height="50px" Width="200px"></asp:TextBox>   
            </div>
 
-            <div id="date2" style="position: relative; left: 400px; margin-top: -300px;">
-                <asp:Label ID="Label3" runat="server" Text="Choose End Date"></asp:Label>
-            <asp:Calendar ID="End_Calendar" runat="server">
-            </asp:Calendar>
-                 <asp:Label ID="EndTimeLabel" runat="server" Text="End Time"></asp:Label>
-                <asp:TextBox ID="EndTime" TextMode="Time" runat="server" Height="50px" Width="200px"></asp:TextBox>   
-            </div>
      <asp:Button ID="Button1" runat="server" Text="Create Appointment" OnClick="Button1_Click" />
   
 </asp:Content>
