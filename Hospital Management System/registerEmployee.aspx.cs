@@ -81,7 +81,7 @@ namespace Hospital_Management_System
                 emailID.Text = " ";
                 userPassword.Text = " ";
                 sinNumber.Text = " ";
-                registerLblSuccess.Text = "User Registered Successfully";
+                registerLblSuccess.Text = "User Registered Successfully with login Employee ID " + emp.EmployeeID  ;
                 registerLblError.Text = "";
 
             }
