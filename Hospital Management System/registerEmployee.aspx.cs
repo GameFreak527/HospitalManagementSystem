@@ -55,21 +55,23 @@ namespace Hospital_Management_System
 
         protected void registerBtn_Click(object sender, EventArgs e)
         {
-            var connectionString = new HospitalDBEntities();
-            Employee emp = new Employee();
-            emp.Ward = Convert.ToInt32(wardNumber.Text);
-            emp.EmployeeType = Convert.ToInt32(employeeType.Text);
-            emp.FirstName = firstName.Text;
-            emp.LastName = lastName.Text;
-            emp.PhoneNumber = contactNumber.Text;
-            emp.Address = address.Text;
-            emp.Email = emailID.Text;
-            emp.Password = userPassword.Text;
-            emp.SIN = sinNumber.Text;
+            try
+            {
+                var connectionString = new HospitalDBEntities();
+                Employee emp = new Employee();
+                emp.Ward = Convert.ToInt32(wardNumber.Text);
+                emp.EmployeeType = Convert.ToInt32(employeeType.Text);
+                emp.FirstName = firstName.Text;
+                emp.LastName = lastName.Text;
+                emp.PhoneNumber = contactNumber.Text;
+                emp.Address = address.Text;
+                emp.Email = emailID.Text;
+                emp.Password = userPassword.Text;
+                emp.SIN = sinNumber.Text;
 
-            connectionString.Employees.Add(emp);
-            connectionString.SaveChanges();
-            
+                connectionString.Employees.Add(emp);
+                connectionString.SaveChanges();
+
                 wardNumber.Text = " ";
                 employeeType.Text = " ";
                 firstName.Text = " ";
@@ -79,7 +81,15 @@ namespace Hospital_Management_System
                 emailID.Text = " ";
                 userPassword.Text = " ";
                 sinNumber.Text = " ";
-            
+                registerLblSuccess.Text = "User Registered Successfully";
+                registerLblError.Text = "";
+
+            }
+            catch
+            {
+                registerLblError.Text = "User is not registered";
+            }
+           
 
 
 

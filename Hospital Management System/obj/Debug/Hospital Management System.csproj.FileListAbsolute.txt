@@ -49,5 +49,4 @@ D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
-D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pd
-
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb

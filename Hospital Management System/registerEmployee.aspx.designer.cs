@@ -13,6 +13,24 @@ namespace Hospital_Management_System {
     public partial class WebForm1 {
         
         /// <summary>
+        /// registerLblSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label registerLblSuccess;
+        
+        /// <summary>
+        /// registerLblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label registerLblError;
+        
+        /// <summary>
         /// wardNumber control.
         /// </summary>
         /// <remarks>
@@ -40,22 +58,22 @@ namespace Hospital_Management_System {
         protected global::System.Web.UI.WebControls.TextBox employeeType;
         
         /// <summary>
-        /// EmployeetypeRequiredFieldValidator1 control.
+        /// EmployeeTypeRangeValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeetypeRequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RangeValidator EmployeeTypeRangeValidator;
         
         /// <summary>
-        /// RangeValidator1 control.
+        /// EmployeeTypeRequiredFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeeTypeRequiredFieldValidator;
         
         /// <summary>
         /// firstName control.
