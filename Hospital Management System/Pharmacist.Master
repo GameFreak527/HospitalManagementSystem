@@ -20,7 +20,6 @@
     <style type="text/css">
         #sidebar1 {
             width: 1083px;
-            height: 369px;
         }
     </style>
 </head>
@@ -90,7 +89,6 @@
 			
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-           <div></div>
         
         </asp:ContentPlaceHolder>
     </div>
