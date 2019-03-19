@@ -18,7 +18,6 @@ D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospi
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
 D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
-D:\College Work\Semester 4\Software Development 2\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
 C:\Users\kiran\OneDrive\Documents\GitHub\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
@@ -50,5 +49,5 @@ D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
-D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pd
 
