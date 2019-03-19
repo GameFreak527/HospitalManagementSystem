@@ -37,3 +37,17 @@ C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Manag
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
 C:\Users\jasne\Source\Repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojAssemblyReference.cache
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
