@@ -51,6 +51,7 @@ namespace Hospital_Management_System
         }
         private void BindGrid()
         {
+            
             SqlConnection conn;
             SqlCommand comm;
             SqlDataReader reader;

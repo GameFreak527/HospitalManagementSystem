@@ -45,7 +45,7 @@
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
         
-         <li><a href='#'><span>View Patient Information</span></a></li>
+         <li><a href='SearchPatientInfoNurse.aspx'><span>View Patient Information</span></a></li>
           
           <li class='last'><a href='#'><span>Search Patient Location</span></a></li>
       </ul>
