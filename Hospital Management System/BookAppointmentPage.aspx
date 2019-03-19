@@ -6,10 +6,10 @@
     <br />
     <br />
     <asp:Label ID="EmployeeLabel" runat="server" Text="Please Enter the ID of the Doctor or Nurse: "></asp:Label>
-    <asp:TextBox ID="EmployeeTextBox" runat="server"></asp:TextBox>
+    <asp:TextBox ID="EmployeeTextBox" TextMode="Number"  runat="server"></asp:TextBox>
 &nbsp;<br />
     <asp:Label ID="PatientLabel" runat="server" Text="Please Enter the ID of the Patient: "></asp:Label>
-    <asp:TextBox ID="PatientTextBox" runat="server"></asp:TextBox>
+    <asp:TextBox ID="PatientTextBox" TextMode="Number"  runat="server"></asp:TextBox>
     <br />
     <br />
    <div id="date1"> 
