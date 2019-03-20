@@ -19,8 +19,6 @@
     <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
     <style type="text/css">
         #sidebar1 {
-            width: 1083px;
-            height: 369px;
         }
     </style>
 </head>
@@ -62,13 +60,11 @@
 
             <div id="banner"></div>
             <div id="page" class="container">
-                <div id="content">
+                <div id="content" style="overflow:hidden">
 
                    
 
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
-                            <div></div>
 
                         </asp:ContentPlaceHolder>
                     
