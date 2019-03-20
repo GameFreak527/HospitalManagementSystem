@@ -18,39 +18,46 @@ namespace Hospital_Management_System
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
+            string variable = "Login to continue";
             //Checks which user is entering the system and chooses the master pages for them
             //checks if the session is null or not
             if (Session.Count > 0)
             {
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
-            }
-            if (position == 5)
-            {
-                MasterPageFile = "~/Receptionist.Master";
-            }
-            else if (position == 4)
-            {
-                MasterPageFile = "~/Laboratory.Master";
-            }
-            else if (position == 3)
-            {
-                MasterPageFile = "~/Nurse.Master";
-            }
-            else if (position == 2)
-            {
-                MasterPageFile = "~/Pharmacist.Master";
-            }
-            else if (position == 1)
-            {
-                MasterPageFile = "~/Doctor.Master";
+                if (position == 5)
+                {
+                    MasterPageFile = "~/Receptionist.Master";
+                }
+                else if (position == 4)
+                {
+                    MasterPageFile = "~/Laboratory.Master";
+                }
+                else if (position == 3)
+                {
+                    MasterPageFile = "~/Nurse.Master";
+                }
+                else if (position == 2)
+                {
+                    MasterPageFile = "~/Pharmacist.Master";
+                }
+                else if (position == 1)
+                {
+                    MasterPageFile = "~/Doctor.Master";
+                }
+                else
+                {
+                    MasterPageFile = "~/Site1.Master";
+                }
             }
             else
             {
-                MasterPageFile = "~/Site1.Master";
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + variable + "');", true);
+                Response.Redirect("LoginPage.aspx");
             }
         }
         private void BindGrid()
         {
+            
             SqlConnection conn;
             SqlCommand comm;
             SqlDataReader reader;

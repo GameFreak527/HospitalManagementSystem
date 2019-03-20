@@ -19,8 +19,11 @@ namespace Hospital_Management_System
             //Comment mine out and add yours to use this classes methods
 
             //Gab's
-            cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
+          // cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
             //cn = new SqlConnection(@"Data Source=GameFreak;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
+            //  cn = new SqlConnection(@"Data Source=DESKTOP-CL4P1VF\SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            
+
         }
 
 
@@ -29,17 +32,17 @@ namespace Hospital_Management_System
         public static void AddSchedule(Appointment appointment)
         {
 
-            SqlCommand cmd = new SqlCommand(@"insert into [Appointment] (Patient, Employee, StartTime, EndTime) values(@patientId, @employeeId, @startTime, @endTime)", cn);
+            SqlCommand cmd = new SqlCommand(@"insert into [Appointment] (Patient, Employee, StartTime) values(@patientId, @employeeId, @startTime)", cn);
 
             cmd.Parameters.Add("@patientId", System.Data.SqlDbType.Int);
             cmd.Parameters.Add("@employeeId", System.Data.SqlDbType.Int);
             cmd.Parameters.Add("@startTime", System.Data.SqlDbType.VarChar);
-            cmd.Parameters.Add("@endTime", System.Data.SqlDbType.VarChar);
+            
 
             cmd.Parameters["@employeeId"].Value = appointment.Employee;
             cmd.Parameters["@patientId"].Value = appointment.Patient;
             cmd.Parameters["@startTime"].Value = appointment.StartTime;
-            cmd.Parameters["@endTime"].Value = appointment.EndTime;
+            
 
             try
             {

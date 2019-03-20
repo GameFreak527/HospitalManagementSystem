@@ -63,6 +63,7 @@
     
        <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
                         <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a> </li>
+    <li class ="has-sub" id="changePasswordBlock" runat="server"> <a href ="ChangePassword.aspx"> <span id ="changePassword" runat="server"> Change Password</span></a></li>
 </ul>
 </div>
 			<!--<ul>

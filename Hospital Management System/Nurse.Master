@@ -45,7 +45,7 @@
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
         
-         <li><a href='#'><span>View Patient Information</span></a></li>
+         <li><a href='SearchPatientInfoNurse.aspx'><span>View Patient Information</span></a></li>
           
           <li class='last'><a href='#'><span>Search Patient Location</span></a></li>
       </ul>
@@ -66,6 +66,7 @@
    </li>
    <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
                         <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a> </li>
+    <li class ="has-sub" id="changePasswordBlock" runat="server"> <a href ="ChangePassword.aspx"> <span id ="changePassword" runat="server"> Change Password</span></a></li>
 </ul>
 </div>
 			<!--<ul>

@@ -31,7 +31,7 @@
 		<div id="header" class="container">
 			<div id="logo">
 				<h1><a href="#">HMS</a></h1>
-				<p>Health Science Centre</p>
+				
 			</div>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
    <li class='active'><a href='#'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
-         <li><a href='#'><span>View Patients</span></a></li>
+         <li><a href='SearchPatientInfoDoc.aspx'><span>View Patients</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
@@ -69,7 +69,8 @@
    </li>
   
     <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
-                        <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a> </li>
+                        <li class='last'><a href="LoginPage.aspx"><span id="Login" runat="server">Login</span></a></li>
+    <li class ="has-sub" id="changePasswordBlock" runat="server"> <a href ="ChangePassword.aspx"> <span id ="changePassword" runat="server"> Change Password</span></a></li>
 </ul>
 </div>
 			<!--<ul>

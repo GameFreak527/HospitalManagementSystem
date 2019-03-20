@@ -20,6 +20,7 @@ namespace Hospital_Management_System
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
+            string variable = "Login to continue";
             //Checks which user is entering the system and chooses the master pages for them
             //checks if the session is null or not
             if (Session.Count > 0)
@@ -27,30 +28,35 @@ namespace Hospital_Management_System
 
             {
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
-            }
-            if (position == 5)
-            {
-                MasterPageFile = "~/Receptionist.Master";
-            }
-            else if (position == 4)
-            {
-                MasterPageFile = "~/Laboratory.Master";
-            }
-            else if (position == 3)
-            {
-                MasterPageFile = "~/Nurse.Master";
-            }
-            else if (position == 2)
-            {
-                MasterPageFile = "~/Pharmacist.Master";
-            }
-            else if (position == 1)
-            {
-                MasterPageFile = "~/Doctor.Master";
+                if (position == 5)
+                {
+                    MasterPageFile = "~/Receptionist.Master";
+                }
+                else if (position == 4)
+                {
+                    MasterPageFile = "~/Laboratory.Master";
+                }
+                else if (position == 3)
+                {
+                    MasterPageFile = "~/Nurse.Master";
+                }
+                else if (position == 2)
+                {
+                    MasterPageFile = "~/Pharmacist.Master";
+                }
+                else if (position == 1)
+                {
+                    MasterPageFile = "~/Doctor.Master";
+                }
+                else
+                {
+                    MasterPageFile = "~/Site1.Master";
+                }
             }
             else
             {
-                MasterPageFile = "~/Site1.Master";
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + variable + "');", true);
+                Response.Redirect("LoginPage.aspx");
             }
         }
 
@@ -69,10 +75,7 @@ namespace Hospital_Management_System
             //the employee ID variable
             if (int.TryParse(EmployeeTextBox.Text, out i) == true &&
                 int.TryParse(EmployeeTextBox.Text, out p) &&
-                 Begin_Calendar.SelectedDate != DateTime.MinValue
-                  && End_Calendar.SelectedDate != DateTime.MinValue &&
-                  Begin_Calendar.SelectedDate <= End_Calendar.SelectedDate
-                 )
+                 Begin_Calendar.SelectedDate != DateTime.MinValue)
             {
                 i = Convert.ToInt32(EmployeeTextBox.Text);
 
@@ -97,7 +100,7 @@ namespace Hospital_Management_System
                 List<Appointment> listOfAppointments = appoint.ToList();
 
                 DateTime startCalendarValue = Begin_Calendar.SelectedDate;
-                DateTime endCalendarValue = End_Calendar.SelectedDate;
+            
 
                 Label2.Text = listOfAppointments.Count.ToString();
 
@@ -115,10 +118,10 @@ namespace Hospital_Management_System
                     Appointment appointmentToBeAdded = new Appointment();
 
                     string start = startCalendarValue.ToShortDateString() + " " + BeginTime.Text;
-                    string end = endCalendarValue.ToShortDateString() + " " + EndTime.Text;
+                    
 
 
-                    appointmentToBeAdded.EndTime = end;
+                    
                     appointmentToBeAdded.StartTime = start;
                     appointmentToBeAdded.Patient = p;
                     appointmentToBeAdded.Employee = i;
@@ -158,7 +161,7 @@ namespace Hospital_Management_System
             {
 
                 errorLabel.ForeColor = System.Drawing.Color.Red;
-                errorLabel.Text = "an error occurred";
+                errorLabel.Text = "Appointment Could not Be Added, Please fill out all fields";
 
             }
         }
