@@ -75,10 +75,7 @@ namespace Hospital_Management_System
             //the employee ID variable
             if (int.TryParse(EmployeeTextBox.Text, out i) == true &&
                 int.TryParse(EmployeeTextBox.Text, out p) &&
-                 Begin_Calendar.SelectedDate != DateTime.MinValue
-                  && End_Calendar.SelectedDate != DateTime.MinValue &&
-                  Begin_Calendar.SelectedDate <= End_Calendar.SelectedDate
-                 )
+                 Begin_Calendar.SelectedDate != DateTime.MinValue)
             {
                 i = Convert.ToInt32(EmployeeTextBox.Text);
 
@@ -103,7 +100,7 @@ namespace Hospital_Management_System
                 List<Appointment> listOfAppointments = appoint.ToList();
 
                 DateTime startCalendarValue = Begin_Calendar.SelectedDate;
-                DateTime endCalendarValue = End_Calendar.SelectedDate;
+            
 
                 Label2.Text = listOfAppointments.Count.ToString();
 
@@ -121,10 +118,10 @@ namespace Hospital_Management_System
                     Appointment appointmentToBeAdded = new Appointment();
 
                     string start = startCalendarValue.ToShortDateString() + " " + BeginTime.Text;
-                    string end = endCalendarValue.ToShortDateString() + " " + EndTime.Text;
+                    
 
 
-                    appointmentToBeAdded.EndTime = end;
+                    
                     appointmentToBeAdded.StartTime = start;
                     appointmentToBeAdded.Patient = p;
                     appointmentToBeAdded.Employee = i;
@@ -164,7 +161,7 @@ namespace Hospital_Management_System
             {
 
                 errorLabel.ForeColor = System.Drawing.Color.Red;
-                errorLabel.Text = "an error occurred";
+                errorLabel.Text = "Appointment Could not Be Added, Please fill out all fields";
 
             }
         }
