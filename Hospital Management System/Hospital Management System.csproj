@@ -103,6 +103,7 @@
     <Content Include="PatientDetailsNurse.aspx" />
     <Content Include="registerEmployee.aspx" />
     <Content Include="ChangePassword.aspx" />
+    <Content Include="placeOrder.aspx" />
     <EntityDeploy Include="DatabaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DatabaseModel.Designer.cs</LastGenOutput>
@@ -424,6 +425,13 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="placeOrder.aspx.cs">
+      <DependentUpon>placeOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="placeOrder.aspx.designer.cs">
+      <DependentUpon>placeOrder.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
