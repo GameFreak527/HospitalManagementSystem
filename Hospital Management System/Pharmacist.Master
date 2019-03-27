@@ -52,7 +52,7 @@
    </li>
      <li class='has-sub'><a href='#'><span>Inventory Order</span></a>
           <ul>
-         <li><a href='#'><span>Place Order</span></a></li>
+         <li><a href='placeOrder.aspx'><span>Place Order</span></a></li>
           <li><a href='#'><span>View Orders</span></a></li>
       </ul>
 
