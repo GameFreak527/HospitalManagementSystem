@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="outerDiv" style="margin-left:30%; overflow-wrap:inherit; width: 454px;" class="shadow-lg p-3 mb-2 bg-info text-white rounded">
+    <div id="outerDiv" style="margin-left:10%; margin-right:35%;overflow-wrap:inherit; " class="shadow-lg p-3 mb-2 bg-info text-white rounded">
         <div class="alert alert-danger" role="alert" runat="server" id="errorMessageDiv" visible="false">
             <asp:Label ID="errorMessage" runat="server" Text="ERROR" Enabled="false"></asp:Label>
         </div>
-        <div id="contentDiv" class="p-3 mb-2 bg-danger text-white">
+        <div id="contentDiv" class="p-3 mb-2 bg-danger text-white" style="overflow:hidden">
        <h2><span class="badge badge-secondary" style="margin-left:20%; margin-bottom:2%">Login</span></h2>
        <table>
            <tr>
