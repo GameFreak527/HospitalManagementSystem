@@ -32,7 +32,7 @@ namespace Hospital_Management_System
             else
             {
                 Session["employee"] = employee;
-                Response.Redirect("BookAppointmentPage.aspx");
+                Response.Redirect("SearchInventoryPharma.aspx");
 
             }
         }

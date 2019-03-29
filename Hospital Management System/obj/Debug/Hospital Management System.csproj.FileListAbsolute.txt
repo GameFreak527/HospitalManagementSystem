@@ -12,3 +12,15 @@ D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
 D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb

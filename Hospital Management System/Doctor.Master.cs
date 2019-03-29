@@ -20,7 +20,7 @@ namespace Hospital_Management_System
             else
             {
                 userNameBlock.Visible = false;
-                changePasswordBlock.Visible = false;
+                //changePasswordBlock.Visible = false;
             }
 
         }

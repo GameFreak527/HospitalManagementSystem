@@ -7,7 +7,7 @@
         <h2>Patients Record</h2>
 
     </div>
-    <div id="body">
+    <div id="body1">
         
         <asp:GridView ID="patientInfoGrid" runat="server"  AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="PatientID" 
             DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" 

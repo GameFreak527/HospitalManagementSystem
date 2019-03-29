@@ -16,6 +16,43 @@ namespace Hospital_Management_System
         {
             BindPatients();
         }
+        protected override void OnPreInit(EventArgs e)
+        {
+            int position = 0;
+
+            //Checks which user is entering the system and chooses the master pages for them
+            //checks if the session is null or not
+            if (Session["employee"] != null)
+
+            {
+                position = ((Employee)Session["employee"]).EmployeeType.Value;
+            }
+            if (position == 5)
+            {
+                MasterPageFile = "~/Receptionist.Master";
+            }
+            else if (position == 4)
+            {
+                MasterPageFile = "~/Laboratory.Master";
+            }
+            else if (position == 3)
+            {
+                MasterPageFile = "~/Nurse.Master";
+            }
+            else if (position == 2)
+            {
+                MasterPageFile = "~/Pharmacist.Master";
+            }
+            else if (position == 1)
+            {
+                MasterPageFile = "~/Doctor.Master";
+            }
+            else
+            {
+                MasterPageFile = "~/Site1.Master";
+            }
+
+        }
 
         private void BindPatients()
         {

@@ -104,6 +104,7 @@
     <Content Include="registerEmployee.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="placeOrder.aspx" />
+    <Content Include="SearchInventoryPharma.aspx" />
     <Content Include="searchPatientInfoReceptionist.aspx" />
     <Content Include="patientDetailsReceptionist.aspx" />
     <EntityDeploy Include="DatabaseModel.edmx">
@@ -375,6 +376,13 @@
     </Compile>
     <Compile Include="RegisterPatient.aspx.designer.cs">
       <DependentUpon>RegisterPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchInventoryPharma.aspx.cs">
+      <DependentUpon>SearchInventoryPharma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchInventoryPharma.aspx.designer.cs">
+      <DependentUpon>SearchInventoryPharma.aspx</DependentUpon>
     </Compile>
     <Compile Include="SearchPatientInfoDoc.aspx.cs">
       <DependentUpon>SearchPatientInfoDoc.aspx</DependentUpon>
