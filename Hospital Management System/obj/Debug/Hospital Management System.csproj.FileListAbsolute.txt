@@ -1,0 +1,14 @@
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojAssemblyReference.cache
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb

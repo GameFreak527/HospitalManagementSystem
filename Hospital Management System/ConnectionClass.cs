@@ -19,10 +19,10 @@ namespace Hospital_Management_System
             //Comment mine out and add yours to use this classes methods
 
             //Gab's
-          // cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
+           cn = new SqlConnection(@"Data Source=LAPTOP-47BNNCUR\COMP229_SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
             //cn = new SqlConnection(@"Data Source=GameFreak;Initial Catalog=Hospital_ManagementDB;Integrated Security=True");
             //  cn = new SqlConnection(@"Data Source=DESKTOP-CL4P1VF\SQL;Initial Catalog=Hospital_ManagementDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            
+            //DESKTOP-R7AG3IR
 
         }
 
@@ -95,6 +95,165 @@ namespace Hospital_Management_System
                 cn.Close();
             }
             return result;
+        }
+
+
+
+
+        public static void AddReportWithoutAppointmentID(int empID, int patientID, string diagnosis, string prescription)
+        {
+            
+            SqlCommand cmd = new SqlCommand(@"insert into [MedicalHistory] (Patient, Diagnosis, Employee, Prescription) values(@patientId, @diagnosis, @employeeId, @prescription)", cn);
+
+            cmd.Parameters.Add("@patientId", System.Data.SqlDbType.Int);
+            cmd.Parameters.Add("@employeeId", System.Data.SqlDbType.Int);
+            cmd.Parameters.Add("@diagnosis", System.Data.SqlDbType.VarChar);
+            cmd.Parameters.Add("@prescription", System.Data.SqlDbType.VarChar);
+
+            cmd.Parameters["@employeeId"].Value = empID;
+            cmd.Parameters["@patientId"].Value = patientID;
+            cmd.Parameters["@diagnosis"].Value = diagnosis;
+            cmd.Parameters["@prescription"].Value = prescription;
+
+            try
+            {
+                cn.Open();
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
+        public static int IsRecordFound(int id) {
+
+           int value = 0;
+            SqlCommand cmd = new SqlCommand(@"select * from [MedicalHistory]  where AppointmentID = @Id", cn);
+
+            cmd.Parameters.Add("@Id", System.Data.SqlDbType.Int);
+
+
+
+            cmd.Parameters["@Id"].Value = id;
+           
+
+
+            try
+            {
+                cn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        value = reader.GetInt32(0);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No rows found.");
+                }
+                reader.Close();
+            }
+
+
+            finally
+            {
+                cn.Close();
+            }
+
+            return value;
+
+        }
+
+
+
+        public static void UpdateReport(int empID, int patientID, string diagnosis, string prescription, int id)
+        {
+
+            SqlCommand cmd = new SqlCommand(@"update [MedicalHistory] set Patient = @patientId, Diagnosis = @diagnosis, Employee = @employeeId, Prescription = @prescription where AppointmentID = @Id ", cn);
+
+            cmd.Parameters.Add("@patientId", System.Data.SqlDbType.Int);
+            cmd.Parameters.Add("@employeeId", System.Data.SqlDbType.Int);
+            cmd.Parameters.Add("@diagnosis", System.Data.SqlDbType.VarChar);
+            cmd.Parameters.Add("@prescription", System.Data.SqlDbType.VarChar);
+            cmd.Parameters.Add("@Id", System.Data.SqlDbType.Int);
+
+
+
+            cmd.Parameters["@Id"].Value = id;
+            cmd.Parameters["@employeeId"].Value = empID;
+            cmd.Parameters["@patientId"].Value = patientID;
+            cmd.Parameters["@diagnosis"].Value = diagnosis;
+            cmd.Parameters["@prescription"].Value = prescription;
+
+            try
+            {
+                cn.Open();
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static int IsPatientRecordFound(int id)
+        {
+
+            int value = 0;
+            SqlCommand cmd = new SqlCommand(@"select * from [MedicalHistory]  where Patient = @Id", cn);
+
+            cmd.Parameters.Add("@Id", System.Data.SqlDbType.Int);
+
+
+
+            cmd.Parameters["@Id"].Value = id;
+
+
+
+            try
+            {
+                cn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        value = reader.GetInt32(0);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No rows found.");
+                }
+                reader.Close();
+            }
+
+
+            finally
+            {
+                cn.Close();
+            }
+
+            return value;
+
         }
     }
 }

@@ -77,6 +77,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddReport.aspx" />
     <Content Include="BookAppointmentPage.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -193,12 +194,23 @@
     <Content Include="default.css" />
     <Content Include="fonts.css" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="UpdateReportPage.aspx" />
+    <Content Include="UpdateReportSearchIDPage.aspx" />
     <Content Include="ViewPatientInfo.aspx" />
+    <Content Include="ViewReport.aspx" />
+    <Content Include="ViewReportIDPage.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReport.aspx.cs">
+      <DependentUpon>AddReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddReport.aspx.designer.cs">
+      <DependentUpon>AddReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -402,12 +414,40 @@
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UpdateReportPage.aspx.cs">
+      <DependentUpon>UpdateReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateReportPage.aspx.designer.cs">
+      <DependentUpon>UpdateReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateReportSearchIDPage.aspx.cs">
+      <DependentUpon>UpdateReportSearchIDPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateReportSearchIDPage.aspx.designer.cs">
+      <DependentUpon>UpdateReportSearchIDPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewPatientInfo.aspx.cs">
       <DependentUpon>ViewPatientInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewPatientInfo.aspx.designer.cs">
       <DependentUpon>ViewPatientInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReport.aspx.cs">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewReport.aspx.designer.cs">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReportIDPage.aspx.cs">
+      <DependentUpon>ViewReportIDPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewReportIDPage.aspx.designer.cs">
+      <DependentUpon>ViewReportIDPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ward.cs">
       <DependentUpon>DatabaseModel.tt</DependentUpon>
