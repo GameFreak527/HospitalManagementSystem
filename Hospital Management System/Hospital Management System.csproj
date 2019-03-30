@@ -105,6 +105,9 @@
     <Content Include="registerEmployee.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="placeOrder.aspx" />
+    <Content Include="SearchInventoryPharma.aspx" />
+    <Content Include="searchPatientInfoReceptionist.aspx" />
+    <Content Include="patientDetailsReceptionist.aspx" />
     <EntityDeploy Include="DatabaseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DatabaseModel.Designer.cs</LastGenOutput>
@@ -386,6 +389,13 @@
     <Compile Include="RegisterPatient.aspx.designer.cs">
       <DependentUpon>RegisterPatient.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SearchInventoryPharma.aspx.cs">
+      <DependentUpon>SearchInventoryPharma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchInventoryPharma.aspx.designer.cs">
+      <DependentUpon>SearchInventoryPharma.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SearchPatientInfoDoc.aspx.cs">
       <DependentUpon>SearchPatientInfoDoc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -472,6 +482,20 @@
     </Compile>
     <Compile Include="placeOrder.aspx.designer.cs">
       <DependentUpon>placeOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="searchPatientInfoReceptionist.aspx.cs">
+      <DependentUpon>searchPatientInfoReceptionist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchPatientInfoReceptionist.aspx.designer.cs">
+      <DependentUpon>searchPatientInfoReceptionist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="patientDetailsReceptionist.aspx.cs">
+      <DependentUpon>patientDetailsReceptionist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="patientDetailsReceptionist.aspx.designer.cs">
+      <DependentUpon>patientDetailsReceptionist.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

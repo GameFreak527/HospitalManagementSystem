@@ -91,93 +91,22 @@
 			
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-          
+           <div></div>
         
         </asp:ContentPlaceHolder>
     </div>
+
+			
 	</div>
 </div>
-	<%--<div id="portfolio-wrapper">
-		<div id="portfolio" class="container">
-			<div id="column1">
-				<div class="title">
-					<h2>Suspendisse lacus</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column2">
-				<div class="title">
-					<h2>Fusce ultrices</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic03.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column3">
-				<div class="title">
-					<h2>Etiam posuere</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column4">
-				<div class="title">
-					<h2>Mauris vulputate</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic05.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-		</div>
-	</div>--%>
+	
 
-<div id="footer-wrapper">
-	<div id="footer" class="container">
-		<div id="box1">
-			<div class="title">
-				<h2>Popular Links</h2>
-			</div>
-			<ul class="style1">
-				<li><a href="#">Care Programs</a></li>
-				<li><a href="#">Careers</a></li>
-                <li><a href="#">Volunteers</a></li>
-				
-			</ul>
-		</div>
-		<div id="box2">
-			<div class="title">
-				
-			</div>
-			<ul class="style1">
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Safety Reporting</a></li>
-				
-			</ul>
-		</div>
-		<div id="box3">
-			<div class="title">
-				<h2>Follow Us</h2>
-			</div>
-			
-			<ul class="contact">
-				<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
-				<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
-				<li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
-				<li><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
-				<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
-			</ul>
-				 </div>
-		</div>
-	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; Copyright 2019. All rights reserved.  | Design by Team S-1</p>
 </div>    
         
-        
-        
-         
-   
+    
     </form>
 </body>
 </html>

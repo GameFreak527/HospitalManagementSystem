@@ -10,24 +10,24 @@
 namespace Hospital_Management_System {
     
     
-    public partial class ViewPatientInfo {
+    public partial class WebForm5 {
         
         /// <summary>
-        /// patientInfoGrid control.
+        /// patientDetailsView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView patientInfoGrid;
+        protected global::System.Web.UI.WebControls.DetailsView patientDetailsView;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// patientDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource patientDataSource;
     }
 }

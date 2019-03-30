@@ -45,7 +45,7 @@
    <li class='has-sub'><a href='#'><span>Patients & Visitors</span></a>
       <ul>
          <li><a href='RegisterPatient.aspx'><span>Register Patient</span></a></li>
-         <li class='last'><a href='#'><span>View Patients</span></a></li>
+         <li class='last'><a href='searchPatientInfoReceptionist.aspx'><span>View Patients</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>

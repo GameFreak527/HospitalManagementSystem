@@ -1,14 +1,26 @@
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojAssemblyReference.cache
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
-C:\Users\HRN\Source\Repos\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojAssemblyReference.cache
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CoreCompileInputs.cache
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csproj.CopyComplete
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+D:\4TH SEMESTER\Project\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll.config
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Hospital Management System.pdb
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\EntityFramework.SqlServer.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.csprojResolveAssemblyReference.cache
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.dll
+C:\Users\jasne\source\repos\GameFreak527\HospitalManagementSystem\Hospital Management System\obj\Debug\Hospital Management System.pdb

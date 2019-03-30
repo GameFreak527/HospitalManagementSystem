@@ -19,7 +19,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
     <style type="text/css">
         #sidebar1 {
-            width: 1083px;
+            width:1083px;
         }
     </style>
 </head>
@@ -59,10 +59,8 @@
      </li>
    <li class='has-sub'><a href='#'><span>Inventory Management</span></a>
        <ul>
-         <li><a href='#'><span>Add Item</span></a></li>
-         <li><a href='#'><span>Delete Item</span></a></li>
-           <li><a href='#'><span>Search Item</span></a></li>
-           <li><a href='#'><span>Update Item</span></a></li>
+         <li><a href='SearchInventoryPharma.aspx'><span>View Inventory Items</span></a></li>
+         
         
       </ul>
    </li>
@@ -84,7 +82,7 @@
 	
 	<div id="banner"></div>
 	<div id="page" class="container">
-		<div id="content">
+		
 			
             <div id="sidebar1">
 			
@@ -98,57 +96,10 @@
 
 
 
-		<!--<div id="sidebar">
-			<div class="box2">
-				<div class="title">
-					<h2>Patient Services </h2>
-				</div>
-				<ul class="style2">
-					<li><a href="#">Register Patient</a></li>
-					<li><a href="#">Make Appointment</a></li>
-					<li><a href="#">View Patient Information</a></li>
-					<li><a href="#">Update Patient Information</a></li>
-					<li><a href="#">Search Patient</a></li>
-					<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-					<li><a href="#">Consequat etiam lorem phasellus</a></li>
-				</ul>
-			</div>
-		</div>
-            -->
+		
 	</div>
-</div>
-	<%--<div id="portfolio-wrapper">
-		<div id="portfolio" class="container">
-			<div id="column1">
-				<div class="title">
-					<h2>Suspendisse lacus</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic02.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column2">
-				<div class="title">
-					<h2>Fusce ultrices</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic03.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column3">
-				<div class="title">
-					<h2>Etiam posuere</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-			<div id="column4">
-				<div class="title">
-					<h2>Mauris vulputate</h2>
-				</div>
-				<a href="#" class="image image-full"><img src="images/pic05.jpg" alt="" /></a>
-				<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
-				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
-		</div>
-	</div>--%>
+
+	
 
 </div>
 <div id="copyright" class="container">
