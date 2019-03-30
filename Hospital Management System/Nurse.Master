@@ -60,7 +60,7 @@
     
     <li class='has-sub'><a href='#'><span>Reports</span></a>
         <ul>
-         <li><a href='#'><span>View Report</span></a></li>
+         <li><a href='ViewReportIDPage.aspx'><span>View Report</span></a></li>
          
       </ul>
    </li>

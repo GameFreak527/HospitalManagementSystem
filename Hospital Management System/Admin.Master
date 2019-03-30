@@ -66,9 +66,9 @@
    </li>
     <li class='has-sub'><a href='#'><span>Reports</span></a>
         <ul>
-         <li><a href='ViewReport'><span>Request & View Report</span></a></li>
-         <li><a href='#'><span>Add Report</span></a></li>
-         <li class='last'><a href='#'><span>Update Report</span></a></li>
+         <li><a href='ViewReportIDPage.aspx'><span>Request & View Report</span></a></li>
+         <li><a href='AddReport.aspx'><span>Add Report</span></a></li>
+         <li class='last'><a href='UpdateReportSearchIDPage.aspx'><span>Update Report</span></a></li>
       </ul>
    </li>
   
