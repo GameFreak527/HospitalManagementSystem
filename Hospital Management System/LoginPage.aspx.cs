@@ -48,7 +48,11 @@ namespace Hospital_Management_System
             {
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
             }
-                if (position == 5)
+                if (position == 6)
+                {
+                    MasterPageFile = "~/Admin.Master";
+                }
+                else if (position == 5)
                 {
                     MasterPageFile = "~/Receptionist.Master";
                 }

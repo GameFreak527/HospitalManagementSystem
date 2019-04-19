@@ -53,7 +53,7 @@
    <li class='has-sub'><a href='#'><span>Doctors & Nurses</span></a>
       <ul>
          
-          <li><a href='#'><span>View Staff Location</span></a></li>
+          <li><a href='EmployeeDetails.aspx'><span>View Staff</span></a></li>
          
       </ul>
    </li>
