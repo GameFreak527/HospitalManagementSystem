@@ -21,13 +21,19 @@ namespace Hospital_Management_System
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
+
             //Checks which user is entering the system and chooses the master pages for them
             //checks if the session is null or not
-            if (Session.Count > 0)
+            if (Session["employee"] != null)
+
             {
                 position = ((Employee)Session["employee"]).EmployeeType.Value;
             }
-            if (position == 5)
+            if (position == 6)
+            {
+                MasterPageFile = "~/Admin.Master";
+            }
+            else if (position == 5)
             {
                 MasterPageFile = "~/Receptionist.Master";
             }
@@ -51,6 +57,7 @@ namespace Hospital_Management_System
             {
                 MasterPageFile = "~/Site1.Master";
             }
+
         }
 
         protected void registerBtn_Click(object sender, EventArgs e)
