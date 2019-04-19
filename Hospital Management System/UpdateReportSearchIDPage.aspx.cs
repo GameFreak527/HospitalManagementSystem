@@ -27,15 +27,19 @@ namespace Hospital_Management_System
 
                     Session["ReportID"] = i;
 
-                    errorLabel.ForeColor = System.Drawing.Color.Green;
-                    errorLabel.Text = "Records Found";
-
+                   
                     if (found > 0) {
 
                         Response.Redirect("UpdateReportPage.aspx");
                         errorLabel.Text = "Records Found after Query";
                     }
-                    
+
+                    if (found == 0)
+                    {
+                        errorLabel.ForeColor = System.Drawing.Color.Red;
+                        errorLabel.Text = "No Medical Reports Found";
+                    }
+
                 }
 
                 catch {

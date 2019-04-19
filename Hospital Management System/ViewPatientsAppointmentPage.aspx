@@ -1,20 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="ViewReport.aspx.cs" Inherits="Hospital_Management_System.ViewReport" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="ViewPatientsAppointmentPage.aspx.cs" Inherits="Hospital_Management_System.ViewPatientsAppointmentPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-       &nbsp;<br />
-       <asp:Label ID="Label5" runat="server" Text="Complete List of Patients Medical History" Font-Size="X-Large" Font-Bold="true"></asp:Label>
+     <asp:Label ID="Label5" runat="server" Text="Complete List of Patients Medical History" Font-Size="X-Large" Font-Bold="true"></asp:Label>
 &nbsp;<asp:GridView ID="searchPatient" runat="server" AutoGenerateColumns="False" Width="500px"
-             BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal"
-            >
+             BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="searchPatient_SelectedIndexChanged">
              <Columns>
-                 <asp:BoundField DataField="AppointmentID" HeaderText="Report Id" />
+                 <asp:BoundField DataField="AppointmentID" HeaderText="Appointment Id" />
                 <asp:BoundField DataField="Patient" HeaderText="Patient Id" />
-                <asp:BoundField DataField="Diagnosis" HeaderText="Diagnosis" />
                   <asp:BoundField DataField="Employee" HeaderText="Employee Id" />
-                <asp:BoundField DataField="Prescription" HeaderText="Medication Prescribed" />
-                <asp:CommandField ShowSelectButton="false"/>
+                <asp:BoundField DataField="StartTime" HeaderText="Start Time" />
+                 <asp:BoundField DataField="EndTime" HeaderText="End Time" />
+                <asp:CommandField ShowSelectButton="true" />
                
             </Columns>
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />

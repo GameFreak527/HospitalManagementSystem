@@ -7,50 +7,76 @@ using System.Web.UI.WebControls;
 
 namespace Hospital_Management_System
 {
-    public partial class ViewReportIDPage : System.Web.UI.Page
+    public partial class CloseAppointmentPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int i = 0;
+            //DB context
+            var context = new HospitalDBEntities();
 
-            if (int.TryParse(IDTextBox.Text, out i) == true)
+            //Holds Appointment ID from Session State
+            int appointmentID = (int)Session["AppointmentID"];
+            
+
+            //Holds patient id from database.
+            int patientID = (int)Session["PatientID"];
+
+            
+            //the employee ID variable
+            if (String.IsNullOrWhiteSpace(PrescriptionTextBox.Text) == false &&
+                String.IsNullOrWhiteSpace(DiagnosisTextBox.Text) == false &&
+                 End_Calendar.SelectedDate != DateTime.MinValue &&
+                   String.IsNullOrWhiteSpace(EndTime.Text) == false)
             {
+
+
                 try
                 {
-                    int found = ConnectionClass.IsPatientRecordFound(i);
 
+                    //Holds employee id from session state.
+                    int employeeID = ConnectionClass.GetAppointmentEmployeeID(appointmentID);
 
-                    Session["PatientID"] = i;
+                    string precription = PrescriptionTextBox.Text;
+                    string diagnosis = DiagnosisTextBox.Text;
+
+                    DateTime endCalendarValue = End_Calendar.SelectedDate;
+                    string endTime = endCalendarValue.ToShortDateString() + " " + EndTime.Text;
+
+                    ConnectionClass.UpdateAndCloseAppointment(appointmentID, endTime, diagnosis,
+                        precription);
+                    ConnectionClass.AddReportWithAppointmentID(employeeID, patientID, diagnosis, 
+                        precription, appointmentID);
+
 
                     errorLabel.ForeColor = System.Drawing.Color.Green;
-                    errorLabel.Text = "Records Found";
+                    errorLabel.Text = "Appointment Closed Successfully";
 
-                    if (found > 0)
-                    {
+                   
 
-                        Response.Redirect("ViewReport.aspx");
-                        errorLabel.Text = "Records Found after Query";
-                    }
+                       Response.Redirect("ViewPatientsAppointmentPage.aspx");
+                       
+                    
 
                 }
 
                 catch
                 {
                     errorLabel.ForeColor = System.Drawing.Color.Red;
-                    errorLabel.Text = "Search Failed";
+                    errorLabel.Text = "Closure Failed";
                 }
             }
 
             else
             {
                 errorLabel.ForeColor = System.Drawing.Color.Red;
-                errorLabel.Text = "No Records Found";
+                errorLabel.Text = "Closure Failed";
             }
+
         }
 
 
@@ -94,4 +120,4 @@ namespace Hospital_Management_System
 
         }
     }
-}
+    }

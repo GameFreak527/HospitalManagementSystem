@@ -10,7 +10,7 @@
 namespace Hospital_Management_System {
     
     
-    public partial class UpdateReportSearchIDPage {
+    public partial class ShowAppointmentsIDPage {
         
         /// <summary>
         /// errorLabel control.

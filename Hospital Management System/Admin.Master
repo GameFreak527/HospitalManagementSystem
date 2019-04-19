@@ -59,9 +59,8 @@
    </li>
     <li class='has-sub'><a href='#'><span>Appointments</span></a>
       <ul>
-         <li><a href='#'><span>View Appointments</span></a></li>
+         <li><a href='ShowAppointmentIDPage.aspx'><span>View Appointments</span></a></li>
            
-         <li class='last'><a href='#'><span>Search Appointment</span></a></li>
       </ul>
    </li>
     <li class='has-sub'><a href='#'><span>Reports</span></a>

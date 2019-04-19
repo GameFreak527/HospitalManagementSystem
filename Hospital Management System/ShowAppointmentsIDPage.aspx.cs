@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Hospital_Management_System
 {
-    public partial class ViewReportIDPage : System.Web.UI.Page
+    public partial class ShowAppointmentsIDPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,7 +22,7 @@ namespace Hospital_Management_System
             {
                 try
                 {
-                    int found = ConnectionClass.IsPatientRecordFound(i);
+                    int found = ConnectionClass.IsPatientAppointmentFound(i);
 
 
                     Session["PatientID"] = i;
@@ -32,9 +32,16 @@ namespace Hospital_Management_System
 
                     if (found > 0)
                     {
-
-                        Response.Redirect("ViewReport.aspx");
+                        errorLabel.ForeColor = System.Drawing.Color.Green;
                         errorLabel.Text = "Records Found after Query";
+                        Response.Redirect("ViewPatientsAppointmentPage.aspx");
+                        
+                    }
+
+                    if(found == 0)
+                    {
+                        errorLabel.ForeColor = System.Drawing.Color.Red;
+                        errorLabel.Text = "No Appointment Records Found";
                     }
 
                 }
@@ -51,6 +58,10 @@ namespace Hospital_Management_System
                 errorLabel.ForeColor = System.Drawing.Color.Red;
                 errorLabel.Text = "No Records Found";
             }
+
+
+
+
         }
 
 

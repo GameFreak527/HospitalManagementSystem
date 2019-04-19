@@ -1,38 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Hospital_Management_System
 {
-    public partial class ViewReport : System.Web.UI.Page
+    public partial class ViewPatientsAppointmentPage : System.Web.UI.Page
     {
-
-        //static List<Employee> employeeList;
-        HospitalDBEntities context = new HospitalDBEntities();
-        
-       
-
         protected void Page_Load(object sender, EventArgs e)
         {
             BindPatientDetails();
-            
         }
 
+        protected void searchPatient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Session["AppointmentID"] = searchPatient.SelectedDataKey.Value;
+            Response.Redirect("CloseAppointmentPage.aspx");
 
-     
+        }
 
         private void BindPatientDetails()
         {
 
             // Obtain the value of the selected row
             int pId = (int)Session["PatientID"];
-           
+
 
             SqlConnection conn;
             SqlCommand comm;
@@ -41,7 +38,7 @@ namespace Hospital_Management_System
             conn = new SqlConnection(connstr);
 
             comm = new SqlCommand(
-                  "SELECT AppointmentID, Patient, Diagnosis, Employee, Appointment, Prescription FROM MedicalHistory where Patient=@pId", conn);
+                  "SELECT AppointmentID, Patient, StartTime, Employee, EndTime FROM Appointment where Patient=@pId", conn);
 
             comm.Parameters.Add("@pId", SqlDbType.Int);
             comm.Parameters["@pId"].Value = pId;
@@ -52,6 +49,7 @@ namespace Hospital_Management_System
                 conn.Open();
                 reader = comm.ExecuteReader();
                 searchPatient.DataSource = reader;
+                searchPatient.DataKeyNames = new string[] { "AppointmentID" };
                 searchPatient.DataBind();
                 reader.Close();
 
@@ -61,6 +59,8 @@ namespace Hospital_Management_System
                 conn.Close();
             }
         }
+
+
 
 
 
@@ -101,6 +101,5 @@ namespace Hospital_Management_System
             }
 
         }
-
     }
-    }
+}

@@ -55,9 +55,8 @@
    </li>
     <li class='has-sub'><a href='#'><span>Appointments</span></a>
       <ul>
-         <li><a href='#'><span>Book Appointment</span></a></li>
-           <li><a href='#'><span>Cancel Appointment</span></a></li>
-         <li class='last'><a href='#'><span>Search Appointment</span></a></li>
+         <li><a href='BookAppointmentPage.aspx'><span>Book Appointment</span></a></li>
+         <li class='last'><a href='ShowAppointmentsIDPage.aspx'><span>Search Appointment</span></a></li>
       </ul>
    </li>
         <li class='has-sub' id="userNameBlock" runat="server"><a href='#' aria-disabled="true">Welcome <span id="userName" runat="server">User</span></a> </li>
