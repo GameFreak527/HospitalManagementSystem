@@ -81,7 +81,7 @@ namespace Hospital_Management_System
 
 
 
-
+        /*
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
@@ -118,6 +118,6 @@ namespace Hospital_Management_System
                 MasterPageFile = "~/Site1.Master";
             }
 
-        }
+        }*/
     }
     }

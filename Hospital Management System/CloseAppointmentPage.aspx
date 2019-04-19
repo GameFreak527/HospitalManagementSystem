@@ -3,8 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <asp:Label ID="errorLabel" runat="server" Text="" Forecolor="Red" Font-Bold="true" Font-Size="Large"></asp:Label>
-      <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
-    <br />
     <asp:Label ID="Label5" runat="server" Text="Close a Patients Appointment" Font-Size="X-Large" Font-Bold="true"></asp:Label>
     <br/>
     <br />

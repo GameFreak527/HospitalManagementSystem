@@ -16,7 +16,7 @@ namespace Hospital_Management_System
         }
 
 
-
+        /*
         protected override void OnPreInit(EventArgs e)
         {
             int position = 0;
@@ -58,7 +58,7 @@ namespace Hospital_Management_System
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + variable + "');", true);
                 Response.Redirect("LoginPage.aspx");
             }
-        }
+        }  */
 
         //Event handler for the create apointment button
         protected void Button1_Click(object sender, EventArgs e)
@@ -74,11 +74,11 @@ namespace Hospital_Management_System
 
             //the employee ID variable
             if (int.TryParse(EmployeeTextBox.Text, out i) == true &&
-                int.TryParse(EmployeeTextBox.Text, out p) &&
+                int.TryParse(PatientTextBox.Text, out p) &&
                  Begin_Calendar.SelectedDate != DateTime.MinValue)
             {
                 i = Convert.ToInt32(EmployeeTextBox.Text);
-
+                p = Convert.ToInt32(PatientTextBox.Text);
 
                 //the patient
 

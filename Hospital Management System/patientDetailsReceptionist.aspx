@@ -22,7 +22,7 @@
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
     </asp:DetailsView>
-        <asp:SqlDataSource ID="patientDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_ManagementDBConnectionString4 %>" SelectCommand="SELECT * FROM [Patient]" UpdateCommand="UPDATE [Patient] SET [Ward] = @Ward, [FirstName] = @FirstName, [LastName] = @LastName, [PhoneNumber] = @PhoneNumber, [Address] = @Address WHERE [PatientID] = @PatientID">
+        <asp:SqlDataSource ID="patientDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_ManagementDBConnectionString %>" SelectCommand="SELECT * FROM [Patient]" UpdateCommand="UPDATE [Patient] SET [Ward] = @Ward, [FirstName] = @FirstName, [LastName] = @LastName, [PhoneNumber] = @PhoneNumber, [Address] = @Address WHERE [PatientID] = @PatientID">
             
             <UpdateParameters>
                 <asp:Parameter Name="Ward" Type="Int32" />

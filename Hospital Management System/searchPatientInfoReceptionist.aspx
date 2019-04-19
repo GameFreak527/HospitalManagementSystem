@@ -31,7 +31,7 @@
         <SortedDescendingHeaderStyle BackColor="#383838" />
 </asp:GridView>
     
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_ManagementDBConnectionString2 %>" SelectCommand="SELECT [PatientID], [FirstName], [PhoneNumber] FROM [Patient] WHERE ([FirstName] LIKE '%' + @FirstName + '%')">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_ManagementDBConnectionString %>" SelectCommand="SELECT [PatientID], [FirstName], [PhoneNumber] FROM [Patient] WHERE ([FirstName] LIKE '%' + @FirstName + '%')">
     <SelectParameters>
         <asp:ControlParameter ControlID="searchText" Name="FirstName" PropertyName="Text" Type="String" />
     </SelectParameters>
