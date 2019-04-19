@@ -41,11 +41,11 @@
 
             <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'><span>Home</span></a></li>
+   <li class='active'><a href='LoginPage.aspx'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
         
-         <li><a href='#'><span>View Patient Information</span></a></li>
+         <li><a href='ViewPatientInfo.aspx'><span>View Patient Information</span></a></li>
           
          
       </ul>
@@ -54,9 +54,9 @@
    
     <li class='has-sub'><a href='#'><span>Reports</span></a>
         <ul>
-         <li><a href='#'><span>View Report</span></a></li>
-         <li><a href='#'><span>Add Report</span></a></li>
-         <li class='last'><a href='#'><span>Update Report</span></a></li>
+         <li><a href='ViewReportIDPage.aspx'><span>View Report</span></a></li>
+         <li><a href='AddReport.aspx'><span>Add Report</span></a></li>
+         <li class='last'><a href='UpdateReportSearchIDPage.aspx'><span>Update Report</span></a></li>
       </ul>
    </li>
   
