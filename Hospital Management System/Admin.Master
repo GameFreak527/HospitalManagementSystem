@@ -59,7 +59,7 @@
    </li>
     <li class='has-sub'><a href='#'><span>Appointments</span></a>
       <ul>
-         <li><a href='ShowAppointmentIDPage.aspx'><span>View Appointments</span></a></li>
+         <li><a href='ShowAppointmentsIDPage.aspx'><span>View Appointments</span></a></li>
            
       </ul>
    </li>
