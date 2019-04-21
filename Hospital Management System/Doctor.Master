@@ -40,7 +40,7 @@
 
             <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='#'><span>Home</span></a></li>
+   <li class='active'><a href='LoginPage.aspx'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Patients</span></a>
       <ul>
          <li><a href='SearchPatientInfoDoc.aspx'><span>View Patients</span></a></li>
